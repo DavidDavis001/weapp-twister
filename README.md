@@ -1,4 +1,4 @@
-# weapp-twister 脑筋急转哇
+# weapp-twister【脑筋急转弯】
 
 > 本项目仅供学习使用
 
