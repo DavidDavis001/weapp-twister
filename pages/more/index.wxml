@@ -1,0 +1,20 @@
+<view>
+	<!-- <view class="user" bindtap="previewImage">
+		<image class="user-avatar" src="{{ userInfo.avatarUrl }}" mode="aspectFit"/>
+		<text class="user-nickname">{{ userInfo.nickName }}</text>
+	</view> -->
+	<view class="list">
+		<block wx:for="{{appList}}" wx:key="index">
+			<view class="item" data-index="{{index}}" catchtap="itemTap">
+				<image src="{{item.icon}}" class="img"></image>
+				<view class="text">{{item.text}}</view>
+			</view>
+		</block>
+	</view>
+	<view class="tac">
+		<image src="http://artdong.top/gif/pumpkin-man.gif"></image>
+	</view>
+	<ad unit-id="adunit-1aab49e150e176ac" class="ads"></ad>
+</view>
+
+

@@ -1,0 +1,59 @@
+<view>
+  <view class="question">
+    <view>
+    {{ question }}
+    </view>
+  </view>
+  <view class="button-container">
+    <!-- <block wx:if="{{questionCount > 1}}">
+      <view class="dimension-button dimension-button-pre" bindtap="pre">
+        上一题
+      </view>
+    </block> -->
+    <button class="btn btn-tip" bindtap="tip">
+      <i class="icon"></i>
+      查看提示
+    </button>
+    <button class="btn btn-help" open-type="share">
+      <i class="icon"></i>
+      求助好友
+    </button>
+  </view>
+  <view class="answer">
+    <block wx:for="{{answer}}" wx:key="index">
+      <view class="item item-answer" bindtap="tapAnswer" data-text="{{item}}" data-index="{{index}}">{{item}}</view>
+    </block>
+  </view>
+  <view class="answer-tip">
+    <block wx:for="{{answer_tip}}" wx:key="index">
+      <view class="item item-tip" bindtap="tapTip" data-text="{{item}}">{{item}}</view>
+    </block>
+  </view>
+  <!-- <button class="button buttom-share" size="mini" bindtap="share">
+    分享      
+  </button> -->
+  <ad unit-id="adunit-41e42f1d21786c96" class="ads"></ad>
+  <!-- <ad unit-id="adunit-8d5e8d61568717fb" ad-type="video" ad-theme="white"></ad> -->
+
+</view>
+
+<!-- success dialog -->
+<success-dialog id="success_dialog" bind:okEvent="okEvent"></success-dialog>
+
+<!-- fail dialog -->
+<fail-dialog id="fail_dialog" bind:cancelEvent="cancelEvent"></fail-dialog>
+
+<!-- tip dialog -->
+<tip-dialog id="tip_dialog" bind:okEvent="okEvent"></tip-dialog>
+
+<!-- 预览区域  -->
+<view hidden='{{hidden}}' class='preview'>
+  <view class='close-poste'>
+    <image src='http://artdong.top/%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E8%84%91%E7%AD%8B%E6%80%A5%E8%BD%AC%E5%BC%AF/close.png' catchtap='closePoste'></image>
+  </view>
+  <image src='{{prurl}}' mode='widthFix'></image>
+  <button type='primary' size='mini' bindtap='save'>保存分享图</button>
+</view>
+
+<!-- 画布大小按需定制 这里我按照背景图的尺寸定的  -->
+<canvas canvas-id="shareImg" style="width:545px;height:771px"></canvas>

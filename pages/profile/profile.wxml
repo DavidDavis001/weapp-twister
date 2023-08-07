@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="user" bindtap="getUserInfo">
+    <image class="user-avatar" src="{{ userInfo.avatarUrl }}" mode="aspectFit"/>
+    <text class="user-describe"> {{ userInfo.describe }} </text>
+    <text class="user-nickname">{{ userInfo.nickName }}</text>
+    <navigator target="miniProgram" open-type="navigate" app-id="wx684e5da21e3a9366" path="pages/index/index" extra-data="" version="release">
+      <button size="mini" type="primary" bindtap="navigateToMiniProgram">明星图 (小程序)</button>
+    </navigator>
+  </view>
+  <ad class="ads" unit-id="adunit-a525a2a8d9f5ffb7"></ad>
+</view>
+
+

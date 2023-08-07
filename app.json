@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/twister/index",
+    "pages/riddle/index",
+    "pages/more/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#085aa1",
+    "navigationBarTitleText": "脑筋急转弯",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "success-dialog": "./component/dialog/success_dialog/success_dialog",
+    "fail-dialog": "./component/dialog/fail_dialog/fail_dialog",
+    "tip-dialog": "./component/dialog/tip_dialog/tip_dialog"
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,23 @@
+<view class="container">
+	<ad unit-id="adunit-1aab49e150e176ac"></ad>
+	<!-- <view class="user" bindtap="previewImage">
+		<image class="user-avatar" src="{{ userInfo.avatarUrl }}" mode="aspectFit"/>
+		<text class="user-nickname">{{ userInfo.nickName }}</text>
+	</view> -->
+	<!--list.wxml-->
+	<block wx:for="{{appList}}" wx:key="index">
+		<view class="weui_cell" data-index="{{index}}"  bindtap="itemtap">
+			<view class="weui_cell_hd">
+				<image src="{{item.icon}}"></image>
+			</view>
+			<view class="weui_cell_bd">
+				<view class="weui_cell_bd_p"> {{item.text}} </view>
+			</view>
+			<view wx:if="{{item.isunread}}" class="badge">{{item.unreadNum}}</view>
+			<!-- <view class="with_arrow"></view> -->
+			<image class="with_arrow" src="{{item.rightIcon}}"></image>
+		</view>
+	</block>
+</view>
+
+

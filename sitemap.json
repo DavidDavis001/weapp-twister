@@ -1,0 +1,28 @@
+{
+  "desc": "关于本文件的更多信息，请参考文档 https://developers.weixin.qq.com/miniprogram/dev/framework/sitemap.html",
+  "rules":[{
+    "action": "allow",
+    "page": "pages/twister/index",
+    "params": ["id"],
+    "matching": "inclusive",
+    "priority": 1200
+  }, {
+    "action": "allow",
+    "page": "pages/index/index",
+    "params": [],
+    "matching": "inclusive",
+    "priority": 1100
+  }, {
+    "action": "allow",
+    "page": "pages/riddle/index",
+    "params": ["id"],
+    "matching": "inclusive",
+    "priority": 1000
+  }, {
+    "action": "allow",
+    "page": "pages/more/index",
+    "params": [],
+    "matching": "inclusive",
+    "priority": 800
+  }]
+}

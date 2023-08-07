@@ -1,0 +1,15 @@
+<view>
+  <view class="logo">
+    <image src="../../images/logo.jpg" mode="aspectFill"/>
+  </view>
+  <view class="btn-wrap">
+    <view class="btn btn-start" bindtap="start">
+      开始游戏
+    </view>
+    <view class="btn btn-more" bindtap="more">
+      更多好玩
+    </view>
+  </view>
+  <ad unit-id="adunit-41e42f1d21786c96" class="ads"></ad>
+  <!-- <ad unit-id="adunit-8d5e8d61568717fb" ad-type="video" ad-theme="white"></ad> -->
+</view>

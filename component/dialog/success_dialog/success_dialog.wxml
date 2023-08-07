@@ -1,0 +1,19 @@
+<view hidden="{{!isShow}}">
+    <view class="ys-mask"></view>
+    <view class="ys-dialog">
+        <ad unit-id="adunit-7d4437fb7ab7ffbe"></ad>
+        <view class="ys-dialog-title">{{title}}</view>
+        <view class="ys-dialog-content">{{content}}</view>
+        <view class="ys-dialog-bottom">
+          <view class="ys-dialog-btn" catchtap="_okEvent">
+            <button class="ys-dialog-ok-btn">
+              {{okText}}
+            </button>
+          </view>  
+          <view class="ys-dialog-btn">
+            <button class="ys-dialog-cancle-btn" open-type="share">{{cancelText}}
+            </button>
+          </view>
+        </view>
+    </view>
+</view>

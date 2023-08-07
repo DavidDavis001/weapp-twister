@@ -1,0 +1,47 @@
+<view>
+  <view class="question">
+    <view class="title">第 {{questionCount}} 关</view>
+    <view>
+    {{ question }}
+    </view>
+    <view class="button-container">
+      <!-- <block wx:if="{{questionCount > 1}}">
+        <view class="dimension-button dimension-button-pre" bindtap="pre">
+          上一题
+        </view>
+      </block> -->
+      <button class="dimension-button dimension-button-tip" bindtap="tip">
+        查看答案
+      </button>
+      <button class="dimension-button dimension-button-share" open-type="share">
+        求助好友
+      </button>
+      <!-- <view class="dimension-button dimension-button-next" bindtap="next">
+        下一关
+      </view> -->
+    </view>
+  </view>
+  <view class="answer">
+    <block wx:for="{{answer}}" wx:key="index">
+      <view class="item item-answer" bindtap="tapAnswer" data-text="{{item}}" data-index="{{index}}">{{item}}</view>
+    </block>
+  </view>
+  <view class="answer-tip">
+    <block wx:for="{{answer_tip}}" wx:key="index">
+      <view class="item item-tip" bindtap="tapTip" data-text="{{item}}">{{item}}</view>
+    </block>
+  </view>
+  <!-- <button class="button buttom-share" size="mini" open-type="share">
+    分享      
+  </button> -->
+  <ad unit-id="adunit-41e42f1d21786c96"></ad>
+</view>
+
+<!-- success dialog -->
+<success-dialog id="success_dialog" bind:okEvent="okEvent"></success-dialog>
+
+<!-- fail dialog -->
+<fail-dialog id="fail_dialog" bind:cancelEvent="cancelEvent"></fail-dialog>
+
+<!-- tip dialog -->
+<tip-dialog id="tip_dialog" bind:okEvent="okEvent"></tip-dialog>

@@ -1,0 +1,31 @@
+page {
+  background: #F6F6F6;
+}
+.logo {
+  text-align:center;
+}
+.btn-wrap {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn {
+  display: inline-block;
+  padding: 20rpx 80rpx;
+  border-radius: 4px;
+}
+.btn-start {
+  background: #085aa1;
+  color: white;
+}
+.btn-more {
+  margin-top: 20rpx;
+  background: #21691e;
+  color: white;
+}
+.ads {
+  position: fixed;
+  bottom: 0;
+}
