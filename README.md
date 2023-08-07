@@ -1,4 +1,6 @@
-# weapp-twister
+# weapp-twister 脑筋急转哇
+
+> 本项目仅供学习使用
 
 ## 来了就留个 :feet:吧，star一下证明你来过  :stuck_out_tongue_closed_eyes:
 
@@ -9,12 +11,14 @@
 
 ### 小程序二维码
 
-<img src="https://github.com/DavidDavis001/weapp-twister/blob/master/images/gh_twister.png" width="320px" style="display:inline;">
+<p align='left'>
+  <img src="https://github.com/DavidDavis001/weapp-twister/blob/main/images/gh_twister.jpg" width="260px" style="display:inline;">
+</p>
 
 #### 欢迎关注我的微信公众号`全栈弄潮儿` ，获取更多学习资源及技术文章等
 
 * 微信公众号二维码，扫一扫或者搜索"全栈弄潮儿"即可关注
 
-<p align='center'>
+<p align='left'>
   <img src="https://upload-images.jianshu.io/upload_images/3100736-ddcf3f57a7be2ad1.jpg" width="260px" style="display:inline;">
 </p>
